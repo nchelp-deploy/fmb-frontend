@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://fundmebank.com/sitemap.xml
+
+# Disallow admin and sensitive routes
+Disallow: /admin
+Disallow: /api
+Disallow: /private

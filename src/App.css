@@ -1,0 +1,57 @@
+/* Font setup (Inter is loaded from index.html) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1f2937; /* Gray-800 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #1E40AF; /* Tailwind primary */
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+  }
+  
+  a {
+    color: #1E40AF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility overrides for dark mode */
+  .dark body {
+    background-color: #1F2937; /* gray-900 */
+    color: #E5E7EB; /* gray-200 */
+  }
+  
+  .dark h1, .dark h2, .dark h3 {
+    color: #FFFFFF;
+  }
+  
+  .card {
+    @apply bg-white shadow-lg rounded-lg p-6 mb-4 dark:bg-secondary-dark dark:text-white;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white font-semibold px-4 py-2 rounded shadow hover:bg-yellow-500;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary px-4 py-2 rounded hover:bg-primary hover:text-white;
+  }
+  
