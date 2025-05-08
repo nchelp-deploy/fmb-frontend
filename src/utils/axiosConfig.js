@@ -3,7 +3,7 @@ import axios from 'axios';
 const TOKEN_KEY = 'token';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:4000/api',
+  baseURL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:4000/api',
   headers: {
     'Content-Type': 'application/json',
   },
