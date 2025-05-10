@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../utils/axiosConfig';
 import Loading from '../components/Loading';
@@ -17,6 +17,10 @@ function Signup() {
   const [isLoading, setIsLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log('Signup page loaded');
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
